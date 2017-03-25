@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zzuli.home.model.Announce">
+
+    <resultMap type="Announce" id="AnnounceMap">
+        <id column="id" property="id" />
+        <id column="content" property="content" />
+        <id column="create_time" property="createTime" />
+        <id column="creator" property="creator" />
+    </resultMap>
+
+    <sql id="pagination">
+        <if test="offset != null and pageSize != null">
+            <![CDATA[
+                LIMIT #{offset},#{pageSize}
+            ]]>
+        </if>
+    </sql>
+
+    <sql id="orderByClause">
+        <if test="orderByClause != null">
+            <![CDATA[
+                ORDER BY ${orderByClause}
+            ]]>
+        </if>
+    </sql>
+    
+    <sql id="groupBy">
+        <![CDATA[
+            GROUP BY id
+        ]]>
+    </sql>
+
+
+    <insert id="add" parameterType="Announce" useGeneratedKeys="true" keyProperty="id">
+        <![CDATA[
+            INSERT INTO announce
+                (content, create_time, creator)
+            VALUES
+                (#{content}, #{createTime}, #{creator})
+        ]]>
+    </insert>
+
+    <select id="find"  parameterType="map" resultMap="AnnounceMap">
+        <![CDATA[
+            SELECT * FROM announce
+            WHERE
+               (#{keywords} IS NULL OR p.name LIKE CONCAT('%', #{keywords}, '%'))
+               AND (p.shadow_of IS NULL OR p.shadow_of = 0) AND p.is_deleted = 0
+        ]]>
+        <include refid="groupBy"/>
+        <include refid="orderByClause"/>
+        <include refid="pagination"/>
+    </select>
+    
+</mapper>

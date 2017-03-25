@@ -1,0 +1,132 @@
+body {
+  font-family: 'Arial', 'Microsoft YaHei';
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.wrap {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.main-top {
+  height: 46%;
+  position: relative;
+  background-color: #1ab496;
+}
+
+.login-window {
+  position: absolute;
+  width: 351px;
+  height: 320px;
+  background: white;
+  border-radius: 4px;
+  top: 18%;
+  right: 10%;
+  box-shadow: 4px 5px 1px rgba(128, 128, 128, 0.31);
+}
+
+.input-div {
+  margin-top: 53px;
+}
+
+.input-style {
+  outline: none;
+  width: 83%;
+  border: 0;
+  margin: 0 auto;
+  font-size: 14px;
+  height: 27px;
+  display: block;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  margin-bottom: 34px;
+}
+
+input{box-shadow: 0 0 0 1000px white inset;}
+
+.basic-button {
+  width: 124px;
+  height: 48px;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  border-radius: 3px;
+}
+
+.button-div {
+  width: 83%;
+  margin: 0 auto;
+  margin-top: 65px;
+  position: relative;
+}
+
+.login-button {
+  float: right;
+  background-color: #31c392;
+  color: white;
+  font-size: 16px;
+}
+
+.reset-button {
+  font-size: 16px;
+  color: rgba(128, 128, 128, 0.88);
+  background-color: white;
+  margin-left: 82px;
+  cursor: pointer;
+  line-height: 48px;
+  display: inline-block;
+}
+
+.logo-style {
+  position: relative;
+  top: 55%;
+  left: 22%;
+}
+
+.logo-img {
+  width: 225px;
+  height: 61px;
+  display: inline-block;
+}
+
+.logo-word-style {
+  position: absolute;
+  top: 87%;
+  left: -5%;
+  font-size: 47px;
+  color: white;
+}
+
+.user-style {
+    position: relative;
+}
+
+.error {
+  position: absolute;
+  top: 20px;
+  left: 31px;
+  color: rgb(226, 6, 6);
+}
+
+.error-login {
+  top: 51px;
+  right: 0;
+  left: initial;
+  display: inline-block;
+  position: absolute;
+}
+
+.background1 {
+  background-color: #333333;
+}
+
+.background2 {
+  background-color: #31c392;
+}
+
+.background3 {
+  background-color: #003056;
+}

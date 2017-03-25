@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0;
+}
+
+.wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.main-top {
+  height: 60%;
+  background-color: #1ab496;
+}
+
+.button-style {
+  width: 92px;
+  height: 32px;
+}
+
+.title {
+  background-color: #003056;
+  width: 100%;
+  height: 60px;
+}
+
+img.logo-img {
+  width: 207px;
+  height: 55px;
+}
+
+.logo-style {
+  margin-left: 20px;
+}
+
+.menu-content {
+  display: block;
+  float: right;
+  width: 77%;
+}
+
+.menu-style {
+  display: block;
+  height: 60px;
+  width: 150px;
+  line-height: 60px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  float: left;
+}
+
+.menu-style:hover {
+  background-color: #446682;
+}
+
+.menu-style:active {
+  background-color: #50718e;
+}
+
+.menu-usr-style {
+  position: relative;
+  display: block;
+  padding-right: 13px;
+  height: 60px;
+  width: 150px;
+  line-height: 60px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  float: right;
+  margin-right: 30px;
+}
+
+.drop-down-img {
+  background-image: url(../images/drop-down.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 25px;
+  height: 22px;
+  top: 14px;
+  right: 1px;
+}
+
+.menu-usr-style:hover {
+  background-color: #446682;
+}
+
+.drop-down-style {
+  position: absolute;
+  top: 60px;
+  background-color: #003056;
+  width: 164px;
+  border-radius: 3px;
+  border-top: 1px solid #106b59;
+  display: none;
+}
+
+.every-drop-down {
+  width: 100%;
+  height: 47px;
+  border-bottom: 1px solid #fff;
+  display: block;
+}
+
+.every-drop-down:hover {
+  background-color: #446682;
+}
+
+.every-drop-down:active {
+  background-color: #50718e;
+}
+
+.show-drop-down {
+  display: block;
+  z-index:20;
+}
+
+.mian-box {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.key-world-style {
+  position: relative;
+  float: right;
+  margin-right: 25px;
+}
+
+.input-style {
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 3px;
+  height: 24px;
+  width: 200px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.select-icon {
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/select.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 16px;
+  right: 2px;
+}
+
+.span-table {
+  width: 76px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.span-current-tab {
+  background-color: #1ab496;
+}
+
+.span-other-tab {
+  background-color: #e0e0e0;
+}
+
+.table-style {
+  padding-top: 48px;
+  margin-left: 26px;
+}
+
+.table-content {
+  border: 1px solid;
+  height: 325px;
+  margin-right: 25px;
+}
+
+.bread-style {
+  margin-bottom: 21px;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 14px;
+  margin-left: 33px;
+}
+
+.base-style {
+  width: 100%;
+  text-align: center;
+}
+
+.content-in-notice {
+  width: 100%;
+  margin-top: 20px;
+  min-height: 460px;
+  padding-top: 77px;
+}
+
+span.span-in-content {
+  width: 25%;
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  background-color: #404369;
+  border-bottom: 1px solid;
+  text-align: center;
+}
+
+.key-word-style {
+  float: right;
+  height: 27px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.main-content-in-notice {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.button-create-style {
+  border: 1px solid gray;
+  border-radius: 3px;
+  height: 26px;
+  width: 70px;
+  cursor: pointer;
+  outline: none;
+}
+
+.key-word-input {
+  height: 20px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.class-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  font-size: 15px; }
+
+.modal-close {
+  height: 25px;
+  cursor: pointer;
+  float: right;
+  width: 25px; }
+
+.modal-main {
+  width: 500px;
+  height: 230px;
+  margin: 200px auto;
+  padding: 20px;
+  background-color: #fff; }
+.modal-main .modal-content p {
+  text-align: center;
+  font-weight: bold; }
+.modal-main .modal-content p img {
+  vertical-align: middle; }
+.modal-main .modal-content p span {
+  margin-left: 10px; }
+.modal-main .modal-content .modal-bottom {
+  margin-top: 40px;
+  font-size: 13px;
+  text-align: center; }
+
+.modal-cancel {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  line-height: 40px;
+  color: white;
+  background-color: #003056;
+  cursor: pointer;
+}
+
+.modal-submit {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  line-height: 40px;
+  color: white;
+  background-color: #003056;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.text-area-style {
+  width: 99%;
+  margin: 0 auto;
+  height: 80px;
+  resize: none;
+}

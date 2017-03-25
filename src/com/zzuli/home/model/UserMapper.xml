@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zzuli.home.model.User">
+
+    <resultMap type="User" id="UserMap">
+        <id column="id" property="id" />
+        <id column="user_name" property="userName" />
+        <id column="password" property="password" />
+        <id column="is_delete" property="isDelete" />
+        <id column="role" property="role" />
+    </resultMap>
+
+
+    <insert id="add" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        <![CDATA[
+            INSERT INTO user
+                (user_name, password)
+            VALUES
+                (#{userId}, #{examId})
+        ]]>
+    </insert>
+
+    <select id="getById" parameterType="int" resultMap="UserMap">
+        <![CDATA[
+            SELECT * FROM user WHERE id = #{id}
+        ]]>
+    </select>
+
+    <select id="getByUserName" parameterType="String" resultMap="UserMap">
+        <![CDATA[
+            SELECT * FROM user WHERE user_name = #{name}
+        ]]>
+    </select>
+
+    <delete id="delete" parameterType="int">
+        <![CDATA[
+            DELETE FROM user WHERE id = #{id}
+        ]]>
+    </delete>
+
+</mapper>
